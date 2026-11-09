@@ -1,0 +1,5 @@
+import { useAuthStore } from "@/stores/authStore";
+export default async () => {
+    const auth =useAuthStore()
+    await auth.checkAuth()
+}
